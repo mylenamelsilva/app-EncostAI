@@ -10,12 +10,15 @@ self.addEventListener('install', event => {
 
         './index.html',
         './cadastro.html',
+        './menu.html',
 
         './assets/css/index.css',
         './assets/css/cadastro.css',
+        './assets/css/menu.css',
 
         './assets/img/logo1-mobile.png',
         './assets/img/logo2-mobile.png',
+        './assets/img/icon.png',
 
         './assets/img/128.png',
         './assets/img/144.png',
@@ -25,6 +28,12 @@ self.addEventListener('install', event => {
         './assets/img/192.png',
         './assets/img/256.png',
         './assets/img/512.png',
+        './assets/img/btn-1.png',
+        './assets/img/btn-2.png',
+        './assets/img/btn-3.png',
+        './assets/img/btn-4.png',
+        './assets/img/btn-5.png',
+        './assets/img/btn-6.png',
       ]))
   );
 });
