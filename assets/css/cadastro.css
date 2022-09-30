@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-form {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-form .form-register {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.625rem;
+}
+
+.container-form .form-register input, .btn-register {
+    width: 19.37rem;
+    height: 3.62rem;
+}
+
+input[type='text'], input[type='password'], input[type='tel'], .btn-register {
+    margin-top: 1.25rem;
+}
+
+input {
+    border: none;
+    background: #8e8e931e;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+input::placeholder {
+    color: #065B76;
+    font-weight: 600;
+    line-height: 1.37rem;
+}
+
+input:focus {
+    outline-color: #065B76;
+}
+
+.btn-register {
+    border-radius: 0px 10px 0px 10px;
+    border: none;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    background: #065B76;
+    cursor: pointer;
+    color: #fff;
+}
+
+.btn-register:hover {
+    background: #075e78;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.625rem;
+    font-size: 18px;
+    font-weight: 700;
+    color: #065B76;
+}
+
+p a {
+    color: #065B76;
+    margin-left: 2px;
+    font-size: 18px;
+    font-weight: 700;
+}
