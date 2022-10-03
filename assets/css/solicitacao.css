@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.titulo-pagina {
+    display: flex;
+}
+
+.titulo-pagina img {
+    position: absolute;
+    left: 10%;
+}
+
+h1 {
+    color: #555;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.container-solicitacao {
+    width: 19.68rem;
+	height: 8rem;
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.625rem;
+}
+
+.card-solicitacao {
+
+    background: rgba(255, 255, 255, 0.2);
+	color: #555;
+    border: none;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+    border-top: solid 8px #DD5521;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.data-protocolo {
+    display: flex;
+    gap: 2rem;
+}
+
+.data-protocolo .protocolo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.data-protocolo .data {
+    
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.endereco {
+    margin-top: 1rem;
+}
+
+.endereco .bairro {
+    margin-top: 0.25rem;
+}
+
+button a {
+    display: inline-flex;
+    width: 19.37rem;
+    height: 3.125rem;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+button {
+    border-radius: 0px 10px 0px 10px;
+    border: none;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    background: #DD5521;
+    margin-top: 4rem;
+}
