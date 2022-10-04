@@ -11,10 +11,16 @@ self.addEventListener('install', event => {
         './index.html',
         './cadastro.html',
         './menu.html',
+        './solicitacao.html',
+        './form-solicitacao.html',
+        './contatos-emergencia.html',
 
         './assets/css/index.css',
         './assets/css/cadastro.css',
         './assets/css/menu.css',
+        './assets/css/solicitacao.css',
+        './assets/css/form-solicitacao.css',
+        './assets/css/contatos-emergencia.css',
 
         './assets/img/logo1-mobile.png',
         './assets/img/logo2-mobile.png',
@@ -34,6 +40,10 @@ self.addEventListener('install', event => {
         './assets/img/btn-4.png',
         './assets/img/btn-5.png',
         './assets/img/btn-6.png',
+        './assets/img/seta.svg',
+        './assets/img/seta-emergencia.svg',
+        './assets/img/search-contatos.png',
+        './assets/img/x-contatos.png',
       ]))
   );
 });

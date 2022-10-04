@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EncostAI</title>
+    <link rel="stylesheet" href="./assets/css/contatos-emergencia.css">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="mobile-web-app-capable" content="yes">
+	
+	<link rel="apple-touch-icon" sizes="144x144" href="./assets/img/144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="./assets/img/152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="./assets/img/180.png">
+	<link rel="apple-touch-icon" sizes="167x167" href="./assets/img/167.png">
+	
+	<link rel="shortcut icon" sizes="192x192" href="./assets/img/192.png">
+	<link rel="shortcut icon" sizes="128x128" href="./assets/img/128.png">
+	
+	<link rel="manifest" href="manifest.json">
+	<meta name="description" content="EncostAi">
+</head>
+<body>
+    <main>
+        <section class="titulo-pagina">
+            <a href="menu.html"><img src="assets/img/seta-emergencia.svg" /></a>
+            <h1> Contatos de emergência</h1>
+        </section>
+
+        <section class="pesquisa-contato">
+            <img class="pesquisa-icone" src="./assets/img/search-contatos.png"></img>
+            <input type="text" name="login" placeholder="Quem você está procurando?" class="barra-pesquisa">
+            <img class="apagar-icone" src="./assets/img/x-contatos.png"></img>
+        </section>
+
+        <div class="linha">
+            <button type="button" class="contato">
+                <p class="top-text">CORPO DE BOMBEIROS</p>
+                <p class="bottom-text">193</p>
+            </button>
+        </div>
+        
+        <div class="linha">
+            <button type="button" class="contato">
+                <p class="top-text">SAMU</p>
+                <p class="bottom-text">192</p>
+            </button>
+        </div>
+
+        <div class="linha">
+            <button type="button" class="contato">
+                <p class="top-text">DEFESA CIVIL</p>
+                <p class="bottom-text">199</p>
+            </button>
+        </div>
+
+        <div class="linha">
+            <button type="button" class="contato">
+                <p class="top-text">POLÍCIA MILITAR</p>
+                <p class="bottom-text">190</p>
+            </button>
+        </div>
+
+        <div class="linha">
+            <button type="button" class="contato">
+                <p class="top-text">POLÍCIA CIVIL</p>
+                <p class="bottom-text">197</p>
+            </button>
+        </div>
+    </main>
+
+
+    <script>
+        let newWorker;
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('service-worker.js').then(reg => {
+            reg.addEventListener('updatefound', () => {
+                // A wild service worker has appeared in reg.installing!
+                newWorker = reg.installing;
+            });
+            });
+            let refreshing;
+            navigator.serviceWorker.addEventListener('controllerchange', function () {
+            if (refreshing) return;
+            window.location.reload();
+            refreshing = true;
+            });
+        }
+    </script>
+
+    <script>
+        document.getElementsByClassName("barra-pesquisa")[0].onfocus = function() {
+            document.getElementsByClassName("pesquisa-icone")[0].style.opacity = 0;
+            document.getElementsByClassName("apagar-icone")[0].style.opacity = 0;
+        };
+        document.getElementsByClassName("barra-pesquisa")[0].onblur = function() {
+            if (document.getElementsByClassName("barra-pesquisa")[0].value == '' || document.getElementsByClassName("barra-pesquisa")[0].value == null) {
+                document.getElementsByClassName("pesquisa-icone")[0].style.opacity = 1;
+            }
+            document.getElementsByClassName("apagar-icone")[0].style.opacity = 1;
+        };
+
+        document.getElementsByClassName("apagar-icone")[0].onclick = function() {
+            document.getElementsByClassName("barra-pesquisa")[0].value = '';
+            document.getElementsByClassName("pesquisa-icone")[0].style.opacity = 1;
+        }
+    </script>
+</body>
+</html>
