@@ -8,12 +8,15 @@ self.addEventListener('install', event => {
     caches.open(cacheName)
       .then(cache => cache.addAll([
 
-        './index.html',
+        './abrigos.html',
         './cadastro.html',
-        './menu.html',
-        './solicitacao.html',
-        './form-solicitacao.html',
         './contatos-emergencia.html',
+        './editar-perfil.html',
+        './form-solicitacao.html',
+        './index.html',
+        './menu.html',
+        './perfil.html',
+        './solicitacao.html',
 
         './assets/css/index.css',
         './assets/css/cadastro.css',
@@ -21,10 +24,14 @@ self.addEventListener('install', event => {
         './assets/css/solicitacao.css',
         './assets/css/form-solicitacao.css',
         './assets/css/contatos-emergencia.css',
+        './assets/css/perfil.css',
+        './assets/css/abrigos.css',
 
         './assets/img/logo1-mobile.png',
         './assets/img/logo2-mobile.png',
-        './assets/img/icon.png',
+        './assets/img/logo.svg',
+        './assets/img/abrigo1.png',
+        './assets/img/abrigo2.png',
 
         './assets/img/128.png',
         './assets/img/144.png',
@@ -34,16 +41,30 @@ self.addEventListener('install', event => {
         './assets/img/192.png',
         './assets/img/256.png',
         './assets/img/512.png',
+
         './assets/img/btn-1.png',
         './assets/img/btn-2.png',
         './assets/img/btn-3.png',
         './assets/img/btn-4.png',
         './assets/img/btn-5.png',
         './assets/img/btn-6.png',
+
+        './assets/img/user.svg',
+        './assets/img/email.svg',
+        './assets/img/cpf.svg',
+        './assets/img/password.svg',
+        './assets/img/phone.svg',
+
         './assets/img/seta.svg',
         './assets/img/seta-emergencia.svg',
+        './assets/img/seta-abrigos.svg',
+        './assets/img/seta-user.svg',
+
         './assets/img/search-contatos.png',
+        './assets/img/search-abrigos.png',
+
         './assets/img/x-contatos.png',
+        './assets/img/x-abrigos.png',
       ]))
   );
 });

@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.titulo-pagina {
+    display: flex;
+}
+
+.titulo-pagina img {
+    position: absolute;
+    left: 10%;
+}
+
+h1 {
+    color: #555;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.pesquisa-abrigo {
+    width: 21.68rem;
+	height: 2rem;
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.625rem;
+}
+
+.barra-pesquisa {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 8px;
+    border-color: #2C5F2E;
+    border-style: solid;
+}
+
+.pesquisa-icone {
+    margin-top: 6px;
+    margin-left: 16px;
+    position: absolute;
+    width: 18px;
+    height: 22px;
+}
+
+.apagar-icone {
+    margin-top: 8px;
+    margin-left: 315px;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+}
+
+.barra-pesquisa:focus, .pesquisa-contato:focus{
+    outline: none;
+}
+
+::placeholder {
+    color: #555555;
+    opacity: 1;
+    text-align: center;
+    text-shadow : 0 0 0 rgb(85, 85, 85);
+}
+
+.abrigo {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.title {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.description {
+    margin-top: 0.25rem;
+    margin-right: auto;
+    margin-left: 0.5%;
+    color: #626262;
+    font-size: 13px;
+}
+
+.linha {
+    margin-top: 2rem;
+}
