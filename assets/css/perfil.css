@@ -73,6 +73,47 @@ h1 {
     background: #B7410E;
 }
 
-.btn .btn-editar {
+.btn .btn-editar, .btn-edicao {
     background: #11496E;
+}
+
+.btn-edicao {
+    width: 19.375rem;
+    height: 3.125rem;
+    border-radius: 0px 10px 0px 10px;
+    border: none;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    margin-top: 4rem;
+}
+
+.btn-edicao a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+
+/* editar meu perfil */
+
+input[type='text'], input[type='password'], input[type='tel'], input[type='email'] {
+    margin-top: 1.25rem;
+}
+
+input {
+    border: none;
+    background: #8e8e931e;
+    border-radius: 8px;
+    padding: 20px;
+    width: 16rem;
+    height: 3.62rem;
+}
+
+input::placeholder {
+    color: #065B76;
+    font-weight: 600;
+    line-height: 1.37rem;
+}
+
+input:focus {
+    outline-color: #065B76;
 }
