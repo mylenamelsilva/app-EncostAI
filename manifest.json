@@ -1,51 +1,126 @@
 {
-    "name": "EncostAi",
-    "short_name": "EncostAi",
-    "icons": [
-      {
-        "src": "./assets/img/128.png",
-        "sizes": "128x128",
-        "type": "image/png"
-      },
-      {
-        "src": "./assets/img/144.png",
-        "sizes": "144x144",
-        "type": "image/png"
-      },
-      {
-        "src": "./assets/img/152.png",
-        "sizes": "152x152",
-        "type": "image/png"
-      },
-      {
-        "src": "./assets/img/167.png",
-        "sizes": "167x167",
-        "type": "image/png"
-      },
-      {
-        "src": "./assets/img/180.png",
-        "sizes": "180x180",
-        "type": "image/png"
-      },
-      {
-        "src": "./assets/img/192.png",
-        "sizes": "192x192",
-        "type": "image/png",
-        "purpose": "any maskable"
-      },
-      {
-        "src": "./assets/img/256.png",
-        "sizes": "256x256",
-        "type": "image/png"
-      },
-      {
-        "src": "./assets/img/512.png",
-        "sizes": "512x512",
-        "type": "image/png"
-      }
-    ],
-    "start_url": "index.html",
-    "display": "standalone",
-    "background_color": "#31506F",
-    "theme_color": "#4D5360"
-  }
+  "name": "EncostAi",
+  "short_name": "EncostAi",
+  "icons": [
+    {
+      "src": "./assets/img/128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "./assets/img/144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "./assets/img/152.png",
+      "sizes": "152x152",
+      "type": "image/png"
+    },
+    {
+      "src": "./assets/img/167.png",
+      "sizes": "167x167",
+      "type": "image/png"
+    },
+    {
+      "src": "./assets/img/180.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "./assets/img/192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "./assets/img/256.png",
+      "sizes": "256x256",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./assets/img/512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#628bb5",
+  "theme_color": "#4D5360",
+  "description": "Aplicativo para cruzamento de dados governamentais, meteorológicos e pessoais para acompanhamento, gestão e alerta de encostas urbanas no Recife. Notificação de risco e solicitação de visitas. Visualização de dados e monitoramento.",
+  "dir": "ltr",
+  "lang": "pt",
+  "orientation": "any",
+  "display_override": [
+    "standalone"
+  ],
+  "prefer_related_applications": false,
+  "shortcuts": [
+    {
+      "name": "Menu",
+      "url": "/menu",
+      "description": "Menu principal do EncostAi"
+    },
+    {
+      "name": "Cadastro",
+      "url": "/cadastro",
+      "description": "Página de cadastro do EncostAi"
+    },
+    {
+      "name": "Contatos de Emergência",
+      "url": "/contatos-emergencia",
+      "description": "Página de contatos de emergência do EncostAi"
+    },
+    {
+      "name": "Vistorias",
+      "url": "/solicitacao",
+      "description": "Página de solicitações de vistoria do EncostAi"
+    },
+    {
+      "name": "Solicitação de Vistoria",
+      "url": "/form-solicitacao",
+      "description": "Página para solicitar vistoria do EncostAi"
+    },
+    {
+      "name": "Abrigos",
+      "url": "/abrigos",
+      "description": "Página de abrigos disponíveis do EncostAi"
+    },
+    {
+      "name": "Perfil",
+      "url": "/perfil",
+      "description": "Página de perfil do EncostAi"
+    },
+    {
+      "name": "Editar Perfil",
+      "url": "/editar-perfil",
+      "description": "Página para editar perfil do EncostAi"
+    }
+  ],
+  "protocol_handlers": [
+    {
+      "protocol": "tel",
+      "url": "/contatos-emergencia"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "./assets/img/screenshot.png",
+      "sizes": "392x737",
+      "type": "image/png",
+      "platform": "narrow",
+      "label": "EncostAi Menu"
+    }
+  ],
+  "categories": [
+    "government",
+    "utilities"
+  ],
+  "related_applications": [
+  ],
+  "iarc_rating_id": "75f5ed2c-d7f4-442f-9684-73328554a068",
+  "scope": "https://testencostai.netlify.app/",
+  "share_target": {}
+}
