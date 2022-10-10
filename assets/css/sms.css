@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.titulo-pagina {
+    display: flex;
+}
+
+.titulo-pagina img {
+    position: absolute;
+    left: 10%;
+}
+
+h1 {
+    color: #555;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.container-sms {
+    width: 19.68rem;
+	height: 8rem;
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.625rem;
+}
+
+.card-sms {
+    background: rgba(255, 255, 255, 0.2);
+	color: #555;
+    border: none;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+    border-top: solid 8px #0868A2;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.data-protocolo {
+    display: flex;
+    gap: 2rem;
+}
+
+.data-protocolo .protocolo {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.endereco {
+    margin-top: 0.5rem;
+}
+
+.endereco .rua {
+    font-size: 13px;
+}
+
+.endereco .status {
+    margin-top: 0.25rem;
+    color: #2B860B;
+    font-size: 13px;
+}
+
+.novo-sms {
+    text-align: center;
+    color: #0868A2;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow : 0 0 0 #0868A2;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EncostAI</title>
+    <link rel="stylesheet" href="./assets/css/form-sms.css">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="mobile-web-app-capable" content="yes">
+	
+	<link rel="apple-touch-icon" sizes="144x144" href="./assets/img/144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="./assets/img/152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="./assets/img/180.png">
+	<link rel="apple-touch-icon" sizes="167x167" href="./assets/img/167.png">
+	
+	<link rel="shortcut icon" sizes="192x192" href="./assets/img/192.png">
+	<link rel="shortcut icon" sizes="128x128" href="./assets/img/128.png">
+	
+	<link rel="manifest" href="manifest.json">
+	<meta name="description" content="EncostAi">
+    <meta name="theme-color" content="#4D5360">
+</head>
+<body>
+    <main>
+        <section class="titulo-pagina">
+            <a href="sms.html"><img src="assets/img/seta-user.svg" /></a>
+            <h1>Novo número</h1>
+        </section>
+
+        <form class="form-container" action="#">
+
+            <input type="text" name="cpf" id="tel" placeholder="Número do telefone" required>
+            <input type="text" name="cep" id="cep" placeholder="CEP" required>
+            <input type="text" name="endereco" id="endereco" placeholder="Endereço" required>
+            <input type="text" name="bairro" id="bairro" placeholder="Bairro" required>
+
+            <button>
+                Cadastrar
+            </button>
+        </form>
+
+    <script>
+        let newWorker;
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('service-worker.js').then(reg => {
+            reg.addEventListener('updatefound', () => {
+                // A wild service worker has appeared in reg.installing!
+                newWorker = reg.installing;
+            });
+            });
+            let refreshing;
+            navigator.serviceWorker.addEventListener('controllerchange', function () {
+            if (refreshing) return;
+            window.location.reload();
+            refreshing = true;
+            });
+        }
+    </script>
+    </main>
+</body>
+</html>
