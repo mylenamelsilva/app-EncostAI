@@ -31,14 +31,23 @@
 
         <form class="form-container" action="#">
 
-            <input type="text" name="cpf" id="tel" placeholder="Número do telefone" required>
-            <input type="text" name="cep" id="cep" placeholder="CEP" required>
-            <input type="text" name="endereco" id="endereco" placeholder="Endereço" required>
-            <input type="text" name="bairro" id="bairro" placeholder="Bairro" required>
+            <input type="text" name="cpf" id="tel" class="input-form-sms" placeholder="Número do telefone" required>
+            <input type="text" name="cep" id="cep" class="input-form-sms"  placeholder="CEP" required>
+            <input type="text" name="endereco" id="endereco" class="input-form-sms"  placeholder="Endereço" required>
+            <input type="text" name="bairro" id="bairro" class="input-form-sms"  placeholder="Bairro" required>
 
-            <button>
+            <button id="btn-form-sms">
                 Cadastrar
             </button>
+
+            <div id="overlay"></div> <!--Pra desfocar atrás quando abrir o modal-->
+
+            <div id="container-modal-sms">
+                <div class="modal-sms">
+                    <h2>Número cadastrado com sucesso</h2>
+                    <button id="btn-modal-sms">Fechar</button>
+                </div>
+            </div>
         </form>
 
     <script>
@@ -57,6 +66,31 @@
             refreshing = true;
             });
         }
+
+        //modal
+
+        const input = document.querySelector('.input-form-sms'); // Pega o input pra fazer uma 'validação' inicial
+        const btnSms = document.querySelector('#btn-form-sms');
+        const btnModal = document.querySelector('#btn-modal-sms');
+        const overlay = document.querySelector('#overlay');
+        const modal = document.querySelector('#container-modal-sms');
+
+
+        btnSms.addEventListener('click', (e) => {
+            if (input.value) {
+                modal.classList.add('active');
+                overlay.classList.add('overlay-active')
+                // Classes que ao apertar no btnSms vão ser adicionadas
+
+                e.preventDefault() // Botei pq antes o modal sumia no mesmo instante em que abria
+            }
+        })
+
+        btnModal.addEventListener('click', () => {
+                modal.classList.remove('active');
+                overlay.classList.remove('overlay-active');
+                // Classes que ao apertar no btnModal vão ser removidas
+        })
     </script>
     </main>
 </body>
