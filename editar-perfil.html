@@ -67,9 +67,18 @@
                 </div>
             </section>
 
-                <button class="btn-edicao">
-                    <a href="editar-perfil.html">Salvar alterações</a>
-                </button>
+            <button class="btn-edicao">
+                <a href="#">Salvar alterações</a>
+            </button>
+
+            <div id="overlay"></div> <!--Pra desfocar atrás quando abrir o modal-->
+
+            <div id="container-modal-perfil">
+                <div class="modal-perfil">
+                    <h2>Alterações salvas com sucesso</h2>
+                    <button id="btn-modal-perfil">Fechar</button>
+                </div>
+            </div>
         </section>
 
         <script>
@@ -88,6 +97,24 @@
                 refreshing = true;
               });
             }
+
+            //modal
+        
+            const btnPerfil = document.querySelector('.btn-edicao');
+            const btnModal = document.querySelector('#btn-modal-perfil');
+            const overlay = document.querySelector('#overlay');
+            const modal = document.querySelector('#container-modal-perfil');
+
+
+            btnPerfil.addEventListener('click', () => {
+                    modal.classList.add('active');
+                    overlay.classList.add('overlay-active')
+            })
+
+            btnModal.addEventListener('click', () => {
+                    modal.classList.remove('active');
+                    overlay.classList.remove('overlay-active');
+            })
         </script>
 
     </main>
