@@ -6,7 +6,7 @@
 }
 
 .menu {
-    height: 100vh;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -22,6 +22,16 @@
     max-width: 75%;
     height: auto;
     text-align: center;
+    /* position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 5%;
+    text-align: center;
+    top: 2%;
+    width: 75%;
+    max-width: 75%;
+    height: auto; */
 }
 
 .botao-1 {
@@ -62,13 +72,12 @@
     width: 150px;
 	height: 160px;
 	background: rgba(255, 255, 255, 0.2);
-	color: rgb(241, 96, 41);
+	color: rgba(255, 255, 255, 0);
 	font-size: 18px;
 	text-align: center;
     margin-right: 40px;
     border: none;
     box-shadow: 0 5px 5px rgba(0,0,0,0.2);
-    text-shadow : 0 0 0 rgb(241, 96, 41);
     border-top: solid 8px rgb(241, 96, 41);
     border-radius: 8px;
     transition: .2s ease;
@@ -79,12 +88,11 @@
     width: 150px;
 	height: 160px;
 	background: rgba(255, 255, 255, 0.2);
-	color: rgb(44, 95, 46);
+	color: rgba(255, 255, 255, 0);
 	font-size: 18px;
 	text-align: center;
     border: none;
     box-shadow: 0 5px 5px rgba(0,0,0,0.2);
-    text-shadow : 0 0 0 rgb(44, 95, 46);
     border-top: solid 8px rgb(44, 95, 46);
     border-radius: 8px;
     transition: .2s ease;
@@ -95,13 +103,12 @@
     width: 150px;
 	height: 160px;
 	background: rgba(255, 255, 255, 0.2);
-	color: rgb(17, 73, 110);
+	color: rgba(255, 255, 255, 0);
 	font-size: 18px;
 	text-align: center;
     margin-right: 40px;
     border: none;
     box-shadow: 0 5px 5px rgba(0,0,0,0.2);
-    text-shadow : 0 0 0 rgb(17, 73, 110);
     border-top: solid 8px rgb(17, 73, 110);
     border-radius: 8px;
     transition: .2s ease;
@@ -112,12 +119,11 @@
     width: 150px;
 	height: 160px;
 	background: rgba(255, 255, 255, 0.2);
-	color: rgb(8, 104, 162);
+	color: rgba(255, 255, 255, 0);
 	font-size: 18px;
 	text-align: center;
     border: none;
     box-shadow: 0 5px 5px rgba(0,0,0,0.2);
-    text-shadow : 0 0 0 rgb(8, 104, 162);
     border-top: solid 8px rgb(8, 104, 162);
     border-radius: 8px;
     transition: .2s ease;
@@ -135,6 +141,89 @@
     margin-right: auto;
 }
 
+.btn-img-2 {
+    width: 65px;
+    height: 70px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+}
+
 .linha{
     margin-bottom: 2rem;
+}
+
+.temp-text-1{
+    color: rgb(241, 96, 41);
+    text-shadow : 0 0 0 rgb(241, 96, 41);
+}
+
+.temp-text-2{
+    color: rgb(44, 95, 46);
+    text-shadow : 0 0 0 rgb(44, 95, 46);
+}
+
+.temp-text-3{
+    color: rgb(17, 73, 110);
+    text-shadow : 0 0 0 rgb(17, 73, 110);
+}
+
+.temp-text-4{
+    color: rgb(8, 104, 162);
+    text-shadow : 0 0 0 rgb(8, 104, 162);
+}
+
+
+@media screen and (max-width: 340px),
+       screen and (max-height: 700px){
+    .linha{
+        margin-bottom: 0px;
+    }
+
+    .btn-img-2 {
+        width: 65px;
+        height: 70px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 4%;
+    }
+
+	.botao-1{
+		width: 100%;
+        margin-bottom: 4%;
+        margin-right: 0px;
+	}
+	
+	.botao-2{
+		width: 100%;
+        margin-bottom: 4%;
+	}
+	
+	.botao-3{
+        margin-bottom: 4%;
+        margin-right: 0px;
+        width: 100%;
+        /* margin-right: 285px; */
+	}
+
+    .botao-4{
+		width: 100%;
+        margin-bottom: 4%;
+	}
+
+    .botao-5{
+		width: 100%;
+        margin-bottom: 4%;
+        margin-right: 0px;
+	}
+
+    .botao-6{
+		width: 100%;
+	}
+
+    /* .menu {
+        height: fit-content;
+    } */
 }

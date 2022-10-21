@@ -81,3 +81,71 @@ p a {
     font-size: 18px;
     font-weight: 700;
 }
+
+.logo {
+    display: block;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-bottom: 1.5rem;
+    width: 75%;
+    max-width: 75%;
+    height: auto;
+    text-align: center;
+}
+
+@media screen and (max-width: 340px),
+       screen and (max-height: 700px) {
+        .logo {
+            margin-bottom: 0rem;
+        }
+
+        .container-form .form-login input, .btn-login, .form-login, hr {
+            box-sizing: border-box;
+            width: 100%;
+            margin-top: 1rem;
+            margin-left: 0%;
+            margin-right: 0%;
+            margin-bottom: 0%;
+            display: block;
+        }
+
+        .container-form {
+            height: fit-content;
+        }
+
+        p
+        {
+            width: 100%;
+            text-align: center;
+            justify-content: center;
+        }
+}
+
+@media screen and (min-width: 1024px) {
+    .logo {
+        margin-bottom: -2rem;
+        width: 50%;
+        max-width: 50%;
+        height: 70%;
+        max-height: 70%;
+        margin-top: -10%;
+    }
+
+    .container-form .form-login input, .form-login {
+        display: flex;
+        flex-direction: column;
+        width: 19.37rem;
+    }
+
+    .btn-login {
+        border-radius: 0px 10px 0px 10px;
+        border: none;
+        box-shadow: 0px 4px 4px 0px #00000040;
+        background: #065B76;
+        cursor: pointer;
+        color: #fff;
+        width: 19.37rem;
+        height: 3.62rem;
+    }
+
+}
