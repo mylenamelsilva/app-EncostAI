@@ -53,7 +53,7 @@ h1 {
 	color: #555;
     border: none;
     box-shadow: 0 5px 5px rgba(0,0,0,0.2);
-    border-top: solid 8px #e2ce1c;
+    border-top: solid 8px #f3de23;
     border-radius: 8px;
     padding: 1rem;
 }
@@ -92,6 +92,13 @@ h1 {
     margin-top: 0.25rem;
 }
 
+.status{
+    font-size: 15px;
+}
+.status-concluida{
+    font-size: 15px;
+    color: #5ddd21;
+}
 button a {
     display: inline-flex;
     width: 19.37rem;
